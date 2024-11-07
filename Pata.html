@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Volume Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traffic Volume Prediction</h1>
+        
+        <div class="input-section">
+            <label for="hour">Hour (0-23):</label>
+            <input type="number" id="hour" min="0" max="23" required>
+
+            <label for="day_of_week">Day of the Week (0-6):</label>
+            <input type="number" id="day_of_week" min="0" max="6" required>
+
+            <button onclick="predictTraffic()">Predict Traffic Volume</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Prediction Result:</h2>
+            <p id="prediction-result">Enter values and click Predict</p>
+        </div>
+
+        <div class="traffic-management">
+            <h2>Traffic Management Decision:</h2>
+            <p id="traffic-decision">No decision yet</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
